@@ -58,6 +58,12 @@
 	padding: 0 10px;
 	width: calc( 100% / 3 );
 	min-height: 545px;
+	transition: opacity ease $tr;
+	cursor: pointer;
+
+	&:hover {
+		opacity: $op;
+	}
 
 	&-inner {
 		width: 100%;
