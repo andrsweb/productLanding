@@ -23,6 +23,10 @@
 		background-color: $light-bg;
 		padding: 80px 40px;
 
+		.button {
+			padding: 10px 60px;
+		}
+
 		&-wrapper {
 			width: 45%;
 			position: relative;
