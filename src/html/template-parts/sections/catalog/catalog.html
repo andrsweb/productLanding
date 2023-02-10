@@ -1,0 +1,36 @@
+<section class="catalog">
+	<div class="container">
+		<h3>
+			Каталог
+		</h3>
+		<h2>
+			Каталог полуфабрикатов
+		</h2>
+		<p class="catalog-subtitle">
+			Выбирайте полуфабрикаты высокого качества по доступным ценам
+		</p>
+		<div class="catalog-items">
+			<div class="catalog-menu">
+				<a href="#" class="menu-item">
+					Популярные
+				</a>
+				<a href="#" class="menu-item">
+					Овощные полуфабрикаты
+				</a>
+				<a href="#" class="menu-item">
+					Мясные полуфабрикаты
+				</a>
+				<a href="#" class="menu-item">
+					Рыбные полуфабрикаты
+				</a>
+			</div>
+			<div class="catalog-cards">
+				@@loop( 'card.html', [
+					{ 'src': 'img/main-page/catalog/1.jpg', 'title': 'Картофель очищенный', 'text': 'Готовая продукция, не требующая трудоёмкого процесса разделки, уже подготовленная к тепловой обработке.', 'cost': '99 руб.​​​​​​​'},
+					{ 'src': 'img/main-page/catalog/2.jpg', 'title': 'Морковь очищенная', 'text': 'Готовая продукция, не требующая трудоёмкого процесса разделки, уже подготовленная к тепловой обработке.', 'cost': '199 руб.​​​​​​​'},
+					{ 'src': 'img/main-page/catalog/3.jpg', 'title': 'Суповой набор', 'text': 'Готовая продукция, не требующая трудоёмкого процесса разделки, уже подготовленная к тепловой обработке.', 'cost': '299 руб.​​​​​​​'}
+				] )
+			</div>
+		</div>
+	</div>
+</section>
