@@ -1,0 +1,35 @@
+.delivery {
+	padding: 50px 0;
+
+	h2 {
+		margin-bottom: 40px;
+	}
+
+	&-items {
+		display: flex;
+	}
+
+	&-img {
+		width: 40%;
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		margin-left: 30px;
+		width: calc( 60% - 30px );
+	}
+
+	&-text {
+		font-family: $ff;
+		margin-bottom: 30px;
+		font-size: 16px;
+		line-height: $lh-title;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
