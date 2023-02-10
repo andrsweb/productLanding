@@ -1,0 +1,53 @@
+.why-we {
+	padding: 80px 0;
+
+	h3 {
+		color: $light;
+		font-weight: $fw-medium;
+		font-size: 15px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	h2 {
+		color: $grey;
+		margin-bottom: 80px;
+	}
+
+	&-items {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 0 -20px;
+	}
+
+	&-item {
+		padding: 0 20px;
+		width: calc( 100% / 3 );
+	}
+
+	&-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	&-img {
+		margin-bottom: 30px;
+	}
+
+	&-title {
+		font-size: 20px;
+		color: $grey;
+		margin-bottom: 30px;
+	}
+
+	&-text {
+		line-height: 150%;
+		color: $grey;
+		font-size: 16px;
+	}
+}
