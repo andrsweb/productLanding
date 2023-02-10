@@ -1,0 +1,67 @@
+.feedback {
+	padding: 50px 0;
+
+	.container {
+		max-width: 1400px;
+	}
+
+	h2 {
+		margin-bottom: 30px;
+	}
+
+	&-subtitle {
+		font-family: $ff;
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&-form {
+		width: calc( 40% - 40px );
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		margin-right: 40px;
+	}
+
+	&-img {
+		width: 60%;
+	}
+
+	fieldset {
+		width: 100%;
+		border: 0;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+		padding: 0;
+
+		label {
+			margin-bottom: 30px;
+		}
+	}
+
+	input {
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid $lighter;
+		margin-bottom: 30px;
+		font-family: $ff;
+		font-size: 18px;
+		padding-left: 20px;
+		padding-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.button {
+		width: 100%;
+	}
+}
