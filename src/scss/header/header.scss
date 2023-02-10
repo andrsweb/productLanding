@@ -1,7 +1,39 @@
 .header {
-	p {
+	background: $bg;
+	padding: 20px 0;
+	
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-logo {
+		cursor: pointer;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-nav {
+		display: flex;
+	}
+
+	.nav-item {
 		font-family: $ff;
-		font-size: 50px;
-		font-weight: $fw-medium;
+		color: $white;
+		margin-right: 20px;
+		font-size: 16px;
+		transition: color ease $tr;
+
+		&:hover {
+			color: $accent;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
