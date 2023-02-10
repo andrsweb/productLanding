@@ -1,0 +1,18 @@
+.button {
+	font-family: $ff;
+	font-weight: $fw-regular;
+	font-size: 20px;
+	border: 0;
+	background-color: $accent;
+	cursor: pointer;
+	color: $white;
+	padding: 13px 14px;
+	box-shadow: rgb(207, 92, 0) 0px 0.25em 0px 0.01em;
+	transition: box-shadow ease $tr,
+			opacity ease $tr;
+
+	&:hover {
+		opacity: $op;
+		box-shadow: none;
+	}
+}
