@@ -15,8 +15,8 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Montserrat', sans-serif;
+$ff-title	: 'Montserrat', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -29,11 +29,10 @@ $fs-xl	: 20px;
 $fw-light	: 300;
 $fw-regular	: 400;
 $fw-medium	: 500;
-$fw-semibold: 600;
 $fw-bold	: 700;
 
 // Line heights.
-$lh			: 1.5;
+$lh			: 1;
 $lh-title	: 1.3;
 
 // Colors.
@@ -42,3 +41,4 @@ $black	: #000000;
 
 // Others.
 $tr: 0.35s;
+$op: 0.7;
