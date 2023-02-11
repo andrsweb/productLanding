@@ -1,0 +1,38 @@
+.meat, .fish {
+	padding: 25px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 50px 0;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.card {
+		width: calc( 100% / 1 );
+
+		@media all and (min-width: $md) {
+			width: calc( 100% / 2 );
+		}
+
+		@media all and (min-width: $xl) {
+			width: calc( 100% / 4 );
+		}
+
+		&-text {
+			text-align: center;
+		}
+
+		&-cost {
+			text-align: center;
+		}
+	}
+}
+
+.card-items {
+	margin: 0 -10px;
+	display: flex;
+	flex-wrap: wrap;
+}

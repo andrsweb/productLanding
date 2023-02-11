@@ -49,3 +49,10 @@ picture {
 		margin-top: auto
 	}
 }
+
+h1,h2,h3,a,p,div,li,span {
+	&::selection {
+		background: $grey;
+		color: $accent;
+	}
+}

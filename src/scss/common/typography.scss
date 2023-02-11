@@ -5,7 +5,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
 	font-family: $ff;
-	font-weight: $fw-bold;
+	font-weight: $fw-medium;
 	line-height: $lh-title;
 	margin: 0;
 	padding: 0;
@@ -21,6 +21,7 @@ h1, .h1 {
 
 h2, .h2 {
 	font-size: 24px;
+	color: $grey;
 
 	@media all and (min-width: $lg) {
 		font-size: 36px
@@ -28,10 +29,15 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 30px
+	color: $light;
+	font-weight: $fw-medium;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
 }
 
 a {
+	font-family: $ff;
 	display: inline-block;
 	text-decoration: none;
 	margin: 0;
@@ -39,10 +45,6 @@ a {
 
 p {
 	margin: 0;
-
-	&:last-of-type {
-		margin-bottom: 0
-	}
 }
 
 b, strong {

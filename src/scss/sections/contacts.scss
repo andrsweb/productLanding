@@ -1,0 +1,70 @@
+.contacts {
+	padding-top: 50px;
+
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	h2 {
+		font-size: 18px;
+		margin-bottom: 15px;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+	}
+
+	h3 {
+		color: $bg;
+	}
+
+	&-map {
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+		height: 600px;
+		position: relative;
+
+		@media all and (min-width: $xl) {
+			width: 100%;
+		}
+
+		address {
+			background-color: $light-bg;
+			position: absolute;
+			right: 10px;
+			top: 60%;
+			padding: 10px;
+
+			@media all and (min-width: $lg) {
+				padding: 50px;
+				right: 100px;
+				transform: translateY( -50% );
+			}
+		}
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
+	&-text {
+		font-family: $ff;
+		font-size: 14px;
+		margin-bottom: 10px;
+		color: $grey;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

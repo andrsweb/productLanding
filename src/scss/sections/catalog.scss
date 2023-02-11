@@ -1,0 +1,149 @@
+.catalog {
+	padding: 25px 0;
+	background-color: $silv;
+
+	@media all and (min-width: $lg) {
+		padding: 50px 0;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	&-subtitle {
+		font-size: 18px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+			margin-bottom: 40px;
+		}
+	}
+
+	&-items {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&-menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		background: $white;
+		margin-bottom: 40px;
+
+		@media all and (min-width: $lg) {
+			width: 25%;
+			padding: 40px;
+			margin-right: 20px;
+			margin-bottom: 0;
+		}
+	}
+
+	.menu-item {
+		font-size: 18px;
+		padding: 20px 0;
+		width: 100%;
+		max-width: 250px;
+		line-height: $lh-title;
+		color: $grey;
+		border-bottom: 1px solid $lighter;
+		transition: color ease $tr;
+
+		&:hover {
+			color: $accent;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-cards {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		@media all and (min-width: $lg) {
+			width: calc( 75% - 20px );
+			margin: 0 -10px;
+		}
+	}
+}
+
+.card {
+	padding: 0 10px;
+	width: calc( 100% / 1 );
+	min-height: 545px;
+	transition: opacity ease $tr;
+
+	@media all and (min-width: $md) {
+		width: calc( 100% / 2 );
+		margin-bottom: 30px;
+	}
+
+	@media all and (min-width: $lg) {
+		width: calc( 100% / 3 );
+		margin-bottom: 0;
+	}
+
+	&-inner {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: $white;
+		padding: 20px;
+	}
+
+	&-img {
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+
+	&-title {
+		font-size: 20px;
+		font-weight: $fw-medium;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	&-text {
+		font-weight: $fw-regular;
+		font-size: 16px;
+		margin-bottom: auto;
+		line-height: $lh-title;
+		max-width: 295.6px;
+		word-break: break-word;
+	}
+
+	&-cost {
+		width: 100%;
+		font-size: 24px;
+		font-weight: $fw-bold;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			text-align: left;
+		}
+	}
+
+	.button {
+		width: 70%;
+
+		@media all and (min-width: $lg) {
+			width: 100%;
+		}
+	}
+}
