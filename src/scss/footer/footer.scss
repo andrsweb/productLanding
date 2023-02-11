@@ -4,7 +4,14 @@
 
 	&-wrapper {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: space-between;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			align-items: flex-start;
+		}
 	}
 
 	&-logo {
@@ -19,13 +26,28 @@
 
 		img {
 			margin-bottom: 30px;
+
+			img {
+				width: 100px;
+	
+				@media all and (min-width: $lg) {
+					width: 150px;
+				}
+			}
 		}
 	}
 
 	&-about, &-info, &-feedback {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		padding-top: 20px;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: auto;
+			padding-top: 40px;
+		}
 	}
 
 	&-text, &-link {
