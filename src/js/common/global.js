@@ -16,7 +16,7 @@ export const isInScope = ( elementSelector, st, offset = 0 ) => {
 
 // variables for body lock
 
-// let targetElement
+let targetElement
 
-// export const getTargetElement = () => targetElement
-// export const setTargetElement = element => targetElement = element
+export const getTargetElement = () => targetElement
+export const setTargetElement = element => targetElement = element

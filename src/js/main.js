@@ -8,3 +8,6 @@ import './lazy-map'
 
 //smooth anchors for links
 import './anchors'
+
+//form-popupp
+import './form-popup'
