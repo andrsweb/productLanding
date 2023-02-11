@@ -25,14 +25,22 @@
 	&-subtext {
 		font-family: $ff;
 		color: $white;
-		font-size: 30px;
+		font-size: 20px;
 		margin-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			font-size: 30px;
+		}
 	}
 
 	&-sale {
-		font-size: 20px;
+		font-size: 18px;
 		color: $white;
 		margin-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			font-size: 20px;
+		}
 	}
 
 	&-wrapper {

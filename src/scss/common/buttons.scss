@@ -1,7 +1,7 @@
 .button {
 	font-family: $ff;
 	font-weight: $fw-regular;
-	font-size: 20px;
+	font-size: 15px;
 	border: 0;
 	background-color: $accent;
 	cursor: pointer;
@@ -14,6 +14,10 @@
 	&:hover {
 		opacity: $op;
 		box-shadow: none;
+	}
+
+	@media all and (min-width: $md) {
+		font-size: 20px;
 	}
 }
 
