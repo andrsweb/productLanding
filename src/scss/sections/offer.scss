@@ -1,9 +1,13 @@
 .offer {
-	padding: 150px 0;
+	padding: 50px 0;
 	background-image: url( '../img/main-page/offer/offer.jpg');
 	background-position: center;
 	background-size: cover;
 	position: relative;
+
+	@media all and (min-width: $lg) {
+		padding: 150px 0;
+	}
 
 	&::before {
 		content: "";
@@ -18,41 +22,70 @@
 
 	h2 {
 		color: $white;
-		font-size: 48px;
+		font-size: 25px;
+
+		@media all and (min-width: $lg) {
+			font-size: 48px;
+		}
 	}
 
 	&-subtext {
 		color: $accent;
-		font-size: 36px;
-		margin-bottom: 50px;
+		font-size: 22px;
+		margin-bottom: 25px;
+
+		@media all and (min-width: $lg) {
+			font-size: 36px;
+			margin-bottom: 50px;
+		}
 	}
 
 	&-wrapper {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		position: relative;
 		z-index: 1;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&-info {
-		width: 60%;
+		width: 100%;
+		margin-bottom: 50px;
+
+		@media all and (min-width: $lg) {
+			width: 60%;
+			margin-bottom: 0;
+		}
 	}
 
 	.form-wrapper {
-		width: 40%;
+		width: 100%;
 		border: 4px solid $white;
 		padding: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@media all and (min-width: $lg) {
+			width: 40%;
+		}
 	}
 
 	&-list {
 		&-item {
-			font-size: 20px;
+			font-size: 18px;
 			color: $white;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			padding-right: 10px;
+
+			@media all and (min-width: $lg) {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
 
 			&::before {
 				content: "—";
