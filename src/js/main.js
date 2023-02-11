@@ -11,3 +11,7 @@ import './anchors'
 
 //form-popupp
 import './form-popup'
+import './card-popup'
+
+//form
+import './common/send-form'

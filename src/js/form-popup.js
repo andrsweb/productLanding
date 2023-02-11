@@ -11,7 +11,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 const showPopup = () => {
 	const popupWrapper = document.querySelector( '.popup-wrapper' )
 	const popupBtn     = document.querySelectorAll( '.form-button' )
-	const closeButton  = document.querySelector( '.popup-close' )
+	const closeButton  = document.querySelectorAll( '.popup-close' )
 	setTargetElement( document.querySelector( '#body-lock' ) )
 
 	if( ! popupWrapper ) return
@@ -26,11 +26,13 @@ const showPopup = () => {
 			}
 		} )
 	} )
+	closeButton.forEach( close => {
 
-	closeButton.addEventListener( 'click', () => {
-		popupWrapper.classList.remove( 'opened' )
-		enableBodyScroll( getTargetElement() )
-	} )
+		close.addEventListener( 'click', () => {
+			popupWrapper.classList.remove( 'opened' )
+			enableBodyScroll( getTargetElement() )
+		} )
+	} )	
 
 	popupWrapper.addEventListener( 'click', e => {
 		e.stopPropagation()

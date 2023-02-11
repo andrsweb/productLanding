@@ -5,41 +5,40 @@ import { setTargetElement, getTargetElement } from './common/global'
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
-	cardPopup()
+	cardPopup( '.popular-item' )
+	cardPopup( '.card' )
 } )
 
-const cardPopup = () => {
-	const cardWrapper = document.querySelector( '.popup-wrapper' )
-	const cardBtn     = document.querySelectorAll( '.form-button' )
-	const cardClose  = document.querySelector( '.popup-close' )
-	setTargetElement( document.querySelector( '#body-lock' ) )
-
-	if( ! popupWrapper ) return
+const cardPopup = ( selector ) => {
+	const cardBtn     = document.querySelectorAll( '.call-popup' )
 
 	cardBtn.forEach( button => {
 		button.addEventListener( 'click', e => {
 			e.preventDefault()
 
-			if( ! popupWrapper.classList.contains( 'opened' ) ) {
-				popupWrapper.classList.add( 'opened' )
+			const cardWrapper = button.closest( selector ).querySelector( '.item-popup' )
+			const cardClose   = cardWrapper.querySelector( '.popup-close' )
+
+			if( cardWrapper && !  cardWrapper.classList.contains( 'opened' ) ) {
+				cardWrapper.classList.add( 'opened' )
 				disableBodyScroll( getTargetElement(), { reserveScrollBarGap: true } )
 			}
+
+			cardWrapper.addEventListener( 'click', e => {
+				e.stopPropagation()
+		
+				const target = e.target
+		
+				if ( target.className && target.classList.contains( 'item-popup' ) ) {
+					cardWrapper.classList.remove( 'opened' )
+					enableBodyScroll( getTargetElement() )
+				}
+			} )
+
+			cardClose.addEventListener( 'click', () => {
+				cardWrapper.classList.remove( 'opened' )
+				enableBodyScroll( getTargetElement() )
+			} )
 		} )
-	} )
-
-	cardClose.addEventListener( 'click', () => {
-		popupWrapper.classList.remove( 'opened' )
-		enableBodyScroll( getTargetElement() )
-	} )
-
-	cardWrapper.addEventListener( 'click', e => {
-		e.stopPropagation()
-
-		const target = e.target
-
-		if ( target.className && target.classList.contains( 'popup-wrapper' ) ) {
-			popupWrapper.classList.remove( 'opened' )
-			enableBodyScroll( getTargetElement() )
-		}
 	} )
 }
