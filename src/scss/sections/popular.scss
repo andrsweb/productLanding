@@ -6,7 +6,11 @@
 	}
 
 	h2 {
-		margin-bottom: 80px;
+		margin-bottom: 15px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 80px;
+		}
 	}
 
 	&-items {
@@ -20,7 +24,7 @@
 		padding: 0 10px;
 		margin-bottom: 50px;
 
-		@media all and (min-width: $lg) {
+		@media all and (min-width: $md) {
 			width: calc( 100% / 2 );
 		}
 	}
